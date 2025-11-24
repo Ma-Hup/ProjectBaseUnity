@@ -297,5 +297,9 @@ MainCanvas (tag: MainCanvas)
 - Q：如何一次加载多个面板并顺序播放动画？
   - A：每个面板使用 `AddUiAnimation` 入队，`UIManager` 通过队列顺序播放（`UI/UIManager.cs:323-350`）
 
+## 11. 后续建议
+- 考虑引入 Easy Save 3 插件，替代 PlayerPrefs 实现数据存储（`DataManager/PPDataManager.cs:19-33, 103-126`）
+- 考虑引入依赖注入
+
 旧版文档连接🔗：
 https://lcndm0b2t06l.feishu.cn/wiki/DyR2wSuZoiBDjEkvjrTcOnd9nMg?from=from_copylink
